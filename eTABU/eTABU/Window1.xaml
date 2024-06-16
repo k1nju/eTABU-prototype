@@ -1,0 +1,31 @@
+﻿<Window x:Class="eTABU.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:eTABU"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="10">
+            <TextBox x:Name="txtUsername" Width="200" Margin="0 0 10 0"/>
+            <Button Content="Add" Click="AddUser_Click"/>
+        </StackPanel>
+
+        <ListBox x:Name="lstUsers" Grid.Row="1" Margin="10"
+                 SelectionMode="Single" SelectionChanged="lstUsers_SelectionChanged">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Name}"/>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        <Button x:Name="btnDeleteUser" Content="Delete User" Grid.Row="1" HorizontalAlignment="Right" Margin="0 10 10 10" Click="DeleteUser_Click" Visibility="Collapsed"/>
+    </Grid>
+</Window>
