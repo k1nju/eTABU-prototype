@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -13,7 +9,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace eTABU
+namespace eTABUApp
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -23,11 +19,6 @@ namespace eTABU
         public MainWindow()
         {
             InitializeComponent();
-        }
-
-        private void txtUsername_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
         }
     }
 }
