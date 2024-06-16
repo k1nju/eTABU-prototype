@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eTABU", "eTABU\eTABU.csproj", "{9A96783C-7FE2-4C61-B809-1147A08B97CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eTABU.Server", "eTABU.Server\eTABU.Server.csproj", "{772867DE-28B4-4101-BE3D-705010330E2E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9A96783C-7FE2-4C61-B809-1147A08B97CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A96783C-7FE2-4C61-B809-1147A08B97CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A96783C-7FE2-4C61-B809-1147A08B97CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A96783C-7FE2-4C61-B809-1147A08B97CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{772867DE-28B4-4101-BE3D-705010330E2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{772867DE-28B4-4101-BE3D-705010330E2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{772867DE-28B4-4101-BE3D-705010330E2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{772867DE-28B4-4101-BE3D-705010330E2E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1B9B3FB2-F28B-406A-95E7-19019554C6C5}
+	EndGlobalSection
+EndGlobal
