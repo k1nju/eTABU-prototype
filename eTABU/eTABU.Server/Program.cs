@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using Todo.Server;
+using eTABU.Server;
 
 var builder = WebApplication.CreateBuilder(args);
 
