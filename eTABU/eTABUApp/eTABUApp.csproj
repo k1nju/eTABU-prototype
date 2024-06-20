@@ -8,4 +8,8 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\eTABU.Server\eTABU.Server.csproj" />
+  </ItemGroup>
+
 </Project>

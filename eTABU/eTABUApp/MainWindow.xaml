@@ -10,51 +10,20 @@
     Height="450"
     mc:Ignorable="d">
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="2*" />
-            <ColumnDefinition Width="*" />
-        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
 
-        <Grid Grid.Column="1">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*" />
-                <RowDefinition Height="3*" />
-                <RowDefinition Height="2*" />
-            </Grid.RowDefinitions>
-            <TextBox
-                Grid.Row="0"
-                HorizontalAlignment="Center"
-                VerticalAlignment="Center"
-                Text="Enter Text" />
+        <Label Grid.Row="0" Content="Username" HorizontalAlignment="Center"/>
+        <TextBox Grid.Row="1" x:Name="txtUsername" Margin="244,10,244,10"/>
+        <Label Grid.Row="2" Content="Password" HorizontalAlignment="Center"/>
+        <PasswordBox Grid.Row="3" x:Name="txtPassword" Margin="244,10,244,10"/>
 
-            <StackPanel Grid.Row="1" Orientation="Vertical">
-                <Label Content="Username:" />
-                <TextBox
-                    x:Name="txtUsername"
-                    Margin="5"
-                    TextChanged="txtUsername_TextChanged" />
-                <Label Content="Password:" />
-                <TextBox
-                    x:Name="txtPassword"
-                    Margin="5"
-                    TextChanged="txtPassword_TextChanged" />
-            </StackPanel>
-
-            <StackPanel Grid.Row="2" Orientation="Vertical">
-                <Button
-                    x:Name="LoginButton"
-                    Width="100"
-                    Margin="5"
-                    Click="LoginButton_Click"
-                    Content="Login" />
-                <Button
-                    x:Name="RegisterButton"
-                    Width="100"
-                    Margin="5"
-                    Click="RegisterButton_Click"
-                    Content="Register" />
-            </StackPanel>
-        </Grid>
+        <StackPanel Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Center" Margin="10"/>
+        <Button Content="Login" Margin="295,107,405,-87" Grid.Row="3"/>
+        <Button Content="Register" Margin="425,109,275,-89" Grid.Row="3"/>
     </Grid>
 </Window>
