@@ -30,8 +30,12 @@ namespace eTABU.Server.Migrations
                 {
                     Id = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
-                    Words = table.Column<string>(type: "TEXT", nullable: false),
-                    NotAllowed = table.Column<string>(type: "TEXT", nullable: false)
+                    MainWord = table.Column<string>(type: "TEXT", nullable: false),
+                    Synonim1 = table.Column<string>(type: "TEXT", nullable: false),
+                    Synonim2 = table.Column<string>(type: "TEXT", nullable: false),
+                    Synonim3 = table.Column<string>(type: "TEXT", nullable: false),
+                    Synonim4 = table.Column<string>(type: "TEXT", nullable: false),
+                    Synonim5 = table.Column<string>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
                 {

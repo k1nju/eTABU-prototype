@@ -22,11 +22,27 @@ namespace eTABU.Server.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("NotAllowed")
+                    b.Property<string>("MainWord")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("Words")
+                    b.Property<string>("Synonim1")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Synonim2")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Synonim3")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Synonim4")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Synonim5")
                         .IsRequired()
                         .HasColumnType("TEXT");
 

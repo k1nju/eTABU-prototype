@@ -10,7 +10,7 @@ using eTABU.Server;
 namespace eTABU.Server.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20240616134724_init")]
+    [Migration("20240620165625_init")]
     partial class init
     {
         /// <inheritdoc />
@@ -25,11 +25,27 @@ namespace eTABU.Server.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("NotAllowed")
+                    b.Property<string>("MainWord")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("Words")
+                    b.Property<string>("Synonim1")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Synonim2")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Synonim3")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Synonim4")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Synonim5")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
