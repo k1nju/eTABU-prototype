@@ -13,12 +13,12 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace eTABU
+namespace eTABUApp
 {
     /// <summary>
     /// Interaction logic for Window2.xaml
     /// </summary>
-    public partial class Window2 : Window
+    public partial class Window2: Window
     {
         public ObservableCollection<User> Users { get; set; }
         public Window2()
@@ -57,9 +57,5 @@ namespace eTABU
         }
     }
 
-    public class User
-    {
-        public string Name { get; set; }
-    }
 }
 
