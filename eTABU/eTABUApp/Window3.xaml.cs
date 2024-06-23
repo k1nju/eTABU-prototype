@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,9 +20,14 @@ namespace eTABUApp
     /// </summary>
     public partial class Window3 : Window
     {
-        public Window3()
+        public ObservableCollection<User> Users { get; set; }
+        public Window3(List<User> users)
         {
+
             InitializeComponent();
+            Users = new ObservableCollection<User>(users);
+            lstUsers.ItemsSource = Users;
         }
+        
     }
 }
