@@ -22,13 +22,36 @@ namespace eTABUApp
     {
         private List<eTABU> TabuList { get; set; }
         public ObservableCollection<User> Users { get; set; }
-        public ObservableCollection<string> Words { get; set; }
+        public ObservableCollection<Synonim> Words { get; set; }
         public string MainWord { get; set; }
-        public Window3(List<User> users)
+        public Window3()
         {
 
             InitializeComponent();
-            Users = new ObservableCollection<User>(users);
+            Users = new ObservableCollection<User>(new List<User> {
+                new User()
+        {
+            Id = 1,
+            Login = "zxc",
+            Password = "qwe"
+        },      new User()
+        {
+            Id = 1,
+            Login = "zxc",
+            Password = "qwe"
+        },      new User()
+        {
+            Id = 1,
+            Login = "zxc",
+            Password = "qwe"
+        },      new User()
+        {
+            Id = 1,
+            Login = "zxc",
+            Password = "qwe"
+        }
+
+        });
             lstUsers.ItemsSource = Users;
             Init();
         }
@@ -45,9 +68,18 @@ namespace eTABUApp
             Random rand = new Random();
             eTABU tmp = TabuList[rand.Next(TabuList.Count)];
             MainWord = tmp.Mainword;
-            Words = new ObservableCollection<string>(new List<string> { tmp.Synonim1, tmp.Synonim2, tmp.Synonim3, tmp.Synonim4, tmp.Synonim5 }) ;
-
-
+            Words = new ObservableCollection<Synonim>(new List<Synonim> { new Synonim(tmp.Synonim1), new Synonim(tmp.Synonim1), new Synonim(tmp.Synonim1), new Synonim(tmp.Synonim1), new Synonim(tmp.Synonim1)  }) ;
         }
+
+    }
+
+    public class Synonim
+    {
+        public Synonim(string synonim1)
+        {
+            Title = synonim1;
+        }
+
+        public string Title{ get; set; }
     }
 }

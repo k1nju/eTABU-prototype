@@ -5,7 +5,9 @@ VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eTABU.Server", "eTABU.Server\eTABU.Server.csproj", "{772867DE-28B4-4101-BE3D-705010330E2E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eTABUApp", "eTABUApp\eTABUApp.csproj", "{E22393F2-ECE2-415B-99DE-B59C489C7EBC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eTABUApp", "eTABUApp\eTABUApp.csproj", "{E22393F2-ECE2-415B-99DE-B59C489C7EBC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp2", "ConsoleApp2\ConsoleApp2.csproj", "{6192BC72-945B-4CCC-B2CB-0E9646303562}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{E22393F2-ECE2-415B-99DE-B59C489C7EBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E22393F2-ECE2-415B-99DE-B59C489C7EBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E22393F2-ECE2-415B-99DE-B59C489C7EBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6192BC72-945B-4CCC-B2CB-0E9646303562}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6192BC72-945B-4CCC-B2CB-0E9646303562}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6192BC72-945B-4CCC-B2CB-0E9646303562}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6192BC72-945B-4CCC-B2CB-0E9646303562}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

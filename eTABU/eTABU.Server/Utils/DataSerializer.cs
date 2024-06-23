@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System.Diagnostics.CodeAnalysis;
 
-namespace Todo.Server.Utils
+namespace eTABU.Server
 {
     public static class DataSerializer
     {

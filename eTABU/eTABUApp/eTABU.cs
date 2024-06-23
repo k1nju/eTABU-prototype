@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace eTABUApp
 {
-    internal class eTABU
+    public class eTABU
     {
         public int Id { get; set; }
         public string Mainword { get; set; }
