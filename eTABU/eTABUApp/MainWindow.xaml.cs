@@ -20,5 +20,26 @@ namespace eTABUApp
         {
             InitializeComponent();
         }
+
+
+        private void txtUsername_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            // Add your code here
+        }
+
+        private void txtpassword_textchanged(object sender, TextChangedEventArgs e)
+        {
+            // Add your code here
+        }
+
+        private void loginbutton_click(object sender, RoutedEventArgs e)
+        {
+            // Add your code here
+        }
+
+        private void registerbutton_click(object sender, RoutedEventArgs e)
+        {
+            // Add your code here
+        }
     }
 }
