@@ -21,8 +21,8 @@ namespace eTABUApp
     public partial class Window3 : Window
     {
         private List<eTABU> TabuList { get; set; }
-        public ObservableCollection<User> Users { get; set; }
-        public ObservableCollection<Synonim> Words { get; set; }
+        public ObservableCollection<User> Users { get => Users; set { Users = value; OnPropertyChanged("Users"); } }
+        public ObservableCollection<Synonim> Words { get => Words; set { Words = value; OnPropertyChanged("Words"); } }
         public string MainWord { get; set; }
         public Window3()
         {
