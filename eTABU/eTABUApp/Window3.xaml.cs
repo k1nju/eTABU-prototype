@@ -15,71 +15,17 @@ using System.Windows.Shapes;
 
 namespace eTABUApp
 {
-    /// <summary>
-    /// Interaction logic for Window3.xaml
-    /// </summary>
     public partial class Window3 : Window
     {
-        private List<eTABU> TabuList { get; set; }
-        public ObservableCollection<User> Users { get => Users; set { Users = value; OnPropertyChanged("Users"); } }
-        public ObservableCollection<Synonim> Words { get => Words; set { Words = value; OnPropertyChanged("Words"); } }
-        public string MainWord { get; set; }
+        MainViewModel vm;
         public Window3()
         {
-
+            vm = new MainViewModel(new List<User>() { new User("Tom"), new User("Bob") , new User("Alice") , new User("Roman") });
             InitializeComponent();
-            Users = new ObservableCollection<User>(new List<User> {
-                new User()
-        {
-            Id = 1,
-            Login = "zxc",
-            Password = "qwe"
-        },      new User()
-        {
-            Id = 1,
-            Login = "zxc",
-            Password = "qwe"
-        },      new User()
-        {
-            Id = 1,
-            Login = "zxc",
-            Password = "qwe"
-        },      new User()
-        {
-            Id = 1,
-            Login = "zxc",
-            Password = "qwe"
-        }
-
-        });
-            lstUsers.ItemsSource = Users;
-            Init();
-        }
-
-        private async Task Init()
-        {
-            eTABUDataSource dataSource = new eTABUDataSource();
-            TabuList = await dataSource.GetTABUs();
-            NextTabu();
-        }
-
-        private void NextTabu()
-        {
-            Random rand = new Random();
-            eTABU tmp = TabuList[rand.Next(TabuList.Count)];
-            MainWord = tmp.Mainword;
-            Words = new ObservableCollection<Synonim>(new List<Synonim> { new Synonim(tmp.Synonim1), new Synonim(tmp.Synonim1), new Synonim(tmp.Synonim1), new Synonim(tmp.Synonim1), new Synonim(tmp.Synonim1)  }) ;
+            DataContext = vm;
         }
 
     }
 
-    public class Synonim
-    {
-        public Synonim(string synonim1)
-        {
-            Title = synonim1;
-        }
-
-        public string Title{ get; set; }
-    }
+    
 }

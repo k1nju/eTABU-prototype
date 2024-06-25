@@ -24,7 +24,6 @@ namespace eTABUApp
             InitializeComponent();
         }
 
-
         private void txtUsername_TextChanged(object sender, TextChangedEventArgs e)
         {
             // Add your code here

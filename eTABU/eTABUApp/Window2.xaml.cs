@@ -32,7 +32,7 @@ namespace eTABUApp
             string username = txtUsername.Text;
             if (!string.IsNullOrWhiteSpace(username))
             {
-                Users.Add(new User { Name = username });
+                Users.Add(new User(username));
                 txtUsername.Text = "";
             }
         }
