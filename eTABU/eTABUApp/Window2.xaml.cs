@@ -55,6 +55,14 @@ namespace eTABUApp
             Users.Remove(selectedUser);
             btnDeleteUser.Visibility = Visibility.Collapsed;
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Window3 window3 = new Window3();
+            // window1.Show(); // Win10 tablet in tablet mode, use this, when sub Window is closed, the main window will be covered by the Start menu.
+            window3.Show();
+            this.Close();
+        }
     }
 
 }

@@ -49,7 +49,7 @@ namespace eTABUApp
             Random rand = new Random();
             eTABU tmp = TabuList[rand.Next(TabuList.Count)];
             MainWord = tmp.Mainword;
-            Words = new ObservableCollection<Synonim>(new List<Synonim> { new Synonim(tmp.Synonim1), new Synonim(tmp.Synonim1), new Synonim(tmp.Synonim1), new Synonim(tmp.Synonim1), new Synonim(tmp.Synonim1) });
+            Words = new ObservableCollection<Synonim>(new List<Synonim> { new Synonim(tmp.Synonim1), new Synonim(tmp.Synonim2), new Synonim(tmp.Synonim3), new Synonim(tmp.Synonim4), new Synonim(tmp.Synonim5) });
         }
 
         private RelayCommand _testCommand;
@@ -64,7 +64,6 @@ namespace eTABUApp
                   }));
             }
         }
-
         private RelayCommand _nextCommand;
         public RelayCommand NextTabuCommand
         {
@@ -93,6 +92,5 @@ namespace eTABUApp
                   }));
             }
         }
-
     }
 }

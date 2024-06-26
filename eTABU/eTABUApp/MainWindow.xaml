@@ -47,5 +47,9 @@
             Grid.Row="3"
             Margin="425,109,275,-89"
             Content="Register" />
+        <Button
+            Grid.Row="3"
+            Margin="596,279,64,-264"
+            Content="Next Page" Click="Button_Click" />
     </Grid>
 </Window>

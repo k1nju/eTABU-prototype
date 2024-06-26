@@ -43,5 +43,13 @@ namespace eTABUApp
         {
             // Add your code here
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Window2 window2 = new Window2();
+            // window1.Show(); // Win10 tablet in tablet mode, use this, when sub Window is closed, the main window will be covered by the Start menu.
+            window2.Show();
+            this.Close();
+        }
     }
 }
