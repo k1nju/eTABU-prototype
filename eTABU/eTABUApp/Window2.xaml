@@ -176,6 +176,7 @@
             x:Name="lstUsers"
             Grid.Row="1"
             Margin="10"
+            FontSize="20"
             SelectionChanged="lstUsers_SelectionChanged"
             SelectionMode="Single">
             <ListBox.ItemTemplate>

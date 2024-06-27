@@ -16,7 +16,7 @@ namespace eTABUApp
         public User(int counter, string username)
         {
             Id = counter;
-            Username = username;
+            Name = username;
         }
 
         public int Id { get; set; }
