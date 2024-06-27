@@ -13,6 +13,12 @@ namespace eTABUApp
             Name = name;
         }
 
+        public User(int counter, string username)
+        {
+            Id = counter;
+            Username = username;
+        }
+
         public int Id { get; set; }
         public string Login { get; set; }
 
@@ -20,6 +26,6 @@ namespace eTABUApp
 
         public string Name { get; set; }
         public int Score { get; set; }
-
+        public string Username { get; }
     }
 }

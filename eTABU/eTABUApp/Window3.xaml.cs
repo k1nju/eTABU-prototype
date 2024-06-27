@@ -18,9 +18,9 @@ namespace eTABUApp
     public partial class Window3 : Window
     {
         MainViewModel vm;
-        public Window3()
+        public Window3(List<User> users)
         {
-            vm = new MainViewModel(new List<User>() { new User("Tom"), new User("Bob") , new User("Alice") , new User("Roman") });
+            vm = new MainViewModel(users);
             InitializeComponent();
             DataContext = vm;
         }

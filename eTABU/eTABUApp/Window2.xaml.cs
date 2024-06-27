@@ -20,6 +20,7 @@ namespace eTABUApp
     /// </summary>
     public partial class Window2: Window
     {
+        private int counter = 0;
         public ObservableCollection<User> Users { get; set; }
         public Window2()
         {
@@ -32,7 +33,8 @@ namespace eTABUApp
             string username = txtUsername.Text;
             if (!string.IsNullOrWhiteSpace(username))
             {
-                Users.Add(new User(username));
+                Users.Add(new User(counter,username));
+                counter++;
                 txtUsername.Text = "";
             }
         }
@@ -58,7 +60,7 @@ namespace eTABUApp
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Window3 window3 = new Window3();
+            Window3 window3 = new Window3(Users.ToList());
             // window1.Show(); // Win10 tablet in tablet mode, use this, when sub Window is closed, the main window will be covered by the Start menu.
             window3.Show();
             this.Close();
